@@ -144,14 +144,14 @@ def main():
     seed = 42
     min_positions_per_game = 16  # because 8 support + 8 query
 
-    meta_iters = 2600
+    meta_iters = 3000
     meta_batch_size = 8
     k_support = 8
     k_query = 8
 
-    inner_lr = 0.1
+    inner_lr = 0.01
     inner_steps = 1
-    outer_lr = 1e-3
+    outer_lr = 1e-3 #0.001
     lambda_value = 0.5
 
     val_every = 50
